@@ -4,7 +4,7 @@
 
 ### Single Nucleotide Variation (SNV)
 
-<img width="800" alt="figure 2" src="figures/togovar-rdf-figures.002.png">
+<img width="800" alt="figure 1" src="figures/togovar-rdf-figure.001.png">
 
 ```turtle
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -30,6 +30,8 @@ tgv:tgv28138048 a obo:SO_001483, m2r:Variation ;
 ```
 
 ### Insertion
+
+<img width="800" alt="figure 2" src="figures/togovar-rdf-figure.002.png">
 
 ```turtle
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -57,6 +59,8 @@ tgv:tgv00000000 a obo:SO_000667, m2r:Variation ;
 
 ### Insertion with undetermined insertion position
 
+
+<img width="800" alt="figure 3" src="figures/togovar-rdf-figure.003.png">
 
 ```turtle
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -88,4 +92,5 @@ tgv:tgv00000000 a obo:SO_000667, m2r:Variation ;
   m2r:referece_allele_vcf "TCTCTCT" ;
   m2r:alternative_allele_vcf "TCTCTCTCTCTCT" ;
   m2r:vcf_position 10 .
+
 ```
