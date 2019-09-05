@@ -4,6 +4,8 @@
 
 ### Single Nucleotide Variation (SNV)
 
+<img width="800" alt="figure 2" src="figures/togovar-rdf-figures.002.png">
+
 ```turtle
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tgv: <http://togovar.biosciencedbc.jp/variant/> .
