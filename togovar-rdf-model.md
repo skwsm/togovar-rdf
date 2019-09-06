@@ -1,10 +1,10 @@
 # TogoVar RDF data model
 
-All information TogoVar presents has been organized as RDF datasets. The RDF models have designed to comply with the following policies.
+All information [TogoVar](https://togovar.biosciencedbc.jp/) presents has been organized as RDF datasets. The RDF models have designed to comply with the following policies.
 * As a general rule, follows to the [NBDC RDF portal guidelines](https://github.com/dbcls/rdfizing-db-guidelines).
 * Sequence feature positions should be described by using the [FLADO](https://github.com/OBF/FALDO) ontology.
 * [Human Chromosome Ontology (HCO)](https://github.com/med2rdf/hco):Human Chromosome Ontology should be used to refere Human chromosomes.
-* [Sequence Types and Features Ontology (SO)](http://bioportal.bioontology.org/ontologies/SO) should be used to classify genomic variations.
+* [Sequence Types and Features Ontology (SO)](http://bioportal.bioontology.org/ontologies/SO) should be used to classify genomic variations. Currently, TogoVar includes five types of genetic varition, which are SNV (obo:SO_0001483), Insertion (obo:SO_0000667) , Deletion (obo:SO_0000159), Indel (obo:SO_1000032) and Substitution (obo:SO_1000002).
 * [med2rdf ontology](https://github.com/med2rdf/med2rdf-ontology) should be used to describe relations between variants and allele sequences.
 
 ## Variations in TogoVar RDF
