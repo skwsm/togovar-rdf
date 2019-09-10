@@ -1,6 +1,6 @@
 # TogoVar RDF data model
 
-All information [TogoVar](https://togovar.biosciencedbc.jp/) presents has been organized as RDF datasets. The RDF models have designed to comply with the following policies.
+All information in [TogoVar](https://togovar.biosciencedbc.jp/) has been organized as RDF datasets. The RDF models have designed to comply with the following policies.
 * As a general rule, follows to the [NBDC RDF portal guidelines](https://github.com/dbcls/rdfizing-db-guidelines).
 * Sequence feature positions should be described by using the [FLADO](https://github.com/OBF/FALDO) ontology.
 * [Human Chromosome Ontology (HCO)](https://github.com/med2rdf/hco):Human Chromosome Ontology should be used to refere Human chromosomes.
