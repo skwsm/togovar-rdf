@@ -28,7 +28,7 @@ tgv:tgv28138048 a obo:SO_001483, m2r:Variation ;
   faldo:location [
     a faldo:ExactPosition ;
     faldo:position 4821390 ;
-    faldo:reference hco:1\#GRCh37
+    faldo:reference hco:1\/GRCh37
   ] ;
   m2r:referece_allele "C" ;
   m2r:alternative_allele "T" ;
@@ -50,13 +50,13 @@ tgv:tgv28138048 a obo:SO_001483, m2r:Variation ;
 @prefix faldo: <http://biohackathon.org/resource/faldo> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-tgv:tgv00000000 a obo:SO_000667, m2r:Variation ;
-  dcterms:identifier "tgv28138048" ;
+tgv:tgv67078796 a obo:SO_000667, m2r:Variation ;
+  dcterms:identifier "tgv67078796" ;
   faldo:location [
     a faldo:InBetweenPosition ;
-    faldo:after 4 ;
-    faldo:before 5 ;
-    faldo:reference hco:1\#GRCh37
+    faldo:after 401378 ;
+    faldo:before 401379 ;
+    faldo:reference hco:1\/GRCh37
   ] ;
   m2r:referece_allele "" ;
   m2r:alternative_allele "CT" ;
