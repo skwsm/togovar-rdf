@@ -6,7 +6,7 @@ All information in [TogoVar](https://togovar.biosciencedbc.jp/) has been organiz
 * [Human Chromosome Ontology (HCO)](https://github.com/med2rdf/hco):Human Chromosome Ontology should be used to refere Human chromosomes.
 * [Sequence Types and Features Ontology (SO)](http://bioportal.bioontology.org/ontologies/SO) should be used to classify genomic variations. Currently, TogoVar includes five types of genetic varition, which are SNV (obo:SO_0001483), Insertion (obo:SO_0000667) , Deletion (obo:SO_0000159), Indel (obo:SO_1000032) and Substitution (obo:SO_1000002).
 * ~~[med2rdf ontology](https://github.com/med2rdf/med2rdf-ontology) should be used to describe relations between variants and allele sequences.~~
-* ~~[genome-variation ontology](https://genome-variation.org/) should be used to describe relations between variants and allele sequences.~~
+* [genome-variation ontology](https://genome-variation.org/) should be used to describe relations between variants and allele sequences.
 
 ## Variations in TogoVar RDF
 
