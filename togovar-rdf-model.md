@@ -5,7 +5,8 @@ All information in [TogoVar](https://togovar.biosciencedbc.jp/) has been organiz
 * Sequence feature positions should be described by using the [FLADO](https://github.com/OBF/FALDO) ontology.
 * [Human Chromosome Ontology (HCO)](https://github.com/med2rdf/hco):Human Chromosome Ontology should be used to refere Human chromosomes.
 * [Sequence Types and Features Ontology (SO)](http://bioportal.bioontology.org/ontologies/SO) should be used to classify genomic variations. Currently, TogoVar includes five types of genetic varition, which are SNV (obo:SO_0001483), Insertion (obo:SO_0000667) , Deletion (obo:SO_0000159), Indel (obo:SO_1000032) and Substitution (obo:SO_1000002).
-* [med2rdf ontology](https://github.com/med2rdf/med2rdf-ontology) should be used to describe relations between variants and allele sequences.
+* ~~[med2rdf ontology](https://github.com/med2rdf/med2rdf-ontology) should be used to describe relations between variants and allele sequences.~~
+* ~~[genome-variation ontology](https://genome-variation.org/) should be used to describe relations between variants and allele sequences.~~
 
 ## Variations in TogoVar RDF
 
@@ -19,6 +20,7 @@ All information in [TogoVar](https://togovar.biosciencedbc.jp/) has been organiz
 @prefix tgvo: <http://togovar.biosciencedbc.jp/ontology/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix m2r: <http://med2rdf.org/ontology/med2rdf#> .
+@prefix gvo: <http://genome-variation.org/TBA#> .
 @prefix hco: <http://identifiers.org/hco/> .
 @prefix faldo: <http://biohackathon.org/resource/faldo> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -30,10 +32,10 @@ tgv:tgv28138048 a obo:SO_001483, m2r:Variation ;
     faldo:position 4821390 ;
     faldo:reference hco:1\/GRCh37
   ] ;
-  m2r:referece_allele "C" ;
-  m2r:alternative_allele "T" ;
-  m2r:referece_allele_vcf "C" ;
-  m2r:alternative_allele_vcf "T" .
+  gvo:ref "C" ;
+  gvo:alt "T" ;
+  gvo:ref_vcf "C" ;
+  gvo:alt_vcf "T" .
 ```
 
 ### Insertion
@@ -46,6 +48,7 @@ tgv:tgv28138048 a obo:SO_001483, m2r:Variation ;
 @prefix tgvo: <http://togovar.biosciencedbc.jp/ontology/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix m2r: <http://med2rdf.org/ontology/med2rdf#> .
+@prefix gvo: <http://genome-variation.org/TBA#> .
 @prefix hco: <http://identifiers.org/hco/> .
 @prefix faldo: <http://biohackathon.org/resource/faldo> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -58,10 +61,10 @@ tgv:tgv67078796 a obo:SO_000667, m2r:Variation ;
     faldo:before 401379 ;
     faldo:reference hco:1\/GRCh37
   ] ;
-  m2r:referece_allele "" ;
-  m2r:alternative_allele "CT" ;
-  m2r:referece_allele_vcf "T" ;
-  m2r:alternative_allele_vcf "TCT" .
+  gvo:ref "" ;
+  gvo:alt "CT" ;
+  gvo:ref_vcf "T" ;
+  gvo:alt_vcf "TCT" .
 ```
 
 ### Insertion with undetermined insertion position
@@ -75,6 +78,7 @@ tgv:tgv67078796 a obo:SO_000667, m2r:Variation ;
 @prefix tgvo: <http://togovar.biosciencedbc.jp/ontology/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix m2r: <http://med2rdf.org/ontology/med2rdf#> .
+@prefix gvo: <http://genome-variation.org/TBA#> .
 @prefix hco: <http://identifiers.org/hco/> .
 @prefix faldo: <http://biohackathon.org/resource/faldo> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -94,10 +98,10 @@ tgv:tgv00000000 a obo:SO_000667, m2r:Variation ;
       faldo:reference hco:1\#GRCh37
     ] ;
   ] ;
-  m2r:referece_allele "CTCTCT" ;
-  m2r:alternative_allele "CTCTCTCTCTCT" ;
-  m2r:referece_allele_vcf "TCTCTCT" ;
-  m2r:alternative_allele_vcf "TCTCTCTCTCTCT" ;
-  m2r:vcf_position 10 .
+  gvo:ref "CTCTCT" ;
+  gvo:alt "CTCTCTCTCTCT" ;
+  gvo:ref_vcf "TCTCTCT" ;
+  gvo:alt_vcf "TCTCTCTCTCTCT" ;
+  gvo:vcf_position 10 .
 
 ```
